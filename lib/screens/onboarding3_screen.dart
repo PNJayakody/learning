@@ -98,20 +98,30 @@ class Onboarding3 extends StatelessWidget {
                             ),
                           ],
                         ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
 
-                        // Arrow Button
-                        Container(
-                          width: 60,
-                          height: 60,
+                              MaterialPageRoute(
+                                builder: (context) => Onboarding3(),
+                              ),
+                            );
+                          },
+                          // Arrow Button
+                          child: Container(
+                            width: 60,
+                            height: 60,
 
-                          decoration: BoxDecoration(
-                            color: AppColors.primary,
-                            shape: BoxShape.circle,
-                          ),
+                            decoration: BoxDecoration(
+                              color: AppColors.primary,
+                              shape: BoxShape.circle,
+                            ),
 
-                          child: const Icon(
-                            Icons.arrow_forward,
-                            color: Colors.white,
+                            child: const Icon(
+                              Icons.arrow_forward,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ],
