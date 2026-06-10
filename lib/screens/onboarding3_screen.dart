@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
 import '../theme/app_text_style.dart';
-import 'onboarding1_screen.dart';
+import 'login_screen.dart';
 
 class Onboarding3 extends StatelessWidget {
   const Onboarding3({super.key});
@@ -105,7 +105,7 @@ class Onboarding3 extends StatelessWidget {
                               context,
 
                               MaterialPageRoute(
-                                builder: (context) => Onboarding1(),
+                                builder: (context) => const LoginScreen(),
                               ),
                             );
                           },
